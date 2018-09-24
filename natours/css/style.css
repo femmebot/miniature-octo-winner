@@ -14,13 +14,17 @@ Dark green: #28b485
   /* outline: 1px solid #f00; */
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: -apple-system, Roboto, BlinkMacSystemFont, “Segoe UI”, Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  padding: 30px;
+  padding: 3rem;
 }
 
 h1 {
@@ -40,19 +44,19 @@ h1 {
   background-size: cover;
   background-position: top;
   background-blend-mode: multiply;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10rem), 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10rem), 0 100%);
   position: relative;
 }
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
 .heading-primary {
@@ -62,12 +66,12 @@ h1 {
   text-align: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;  /* fix for shaky animation */
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 800;
 
   animation-name: moveInLeft;
@@ -77,15 +81,15 @@ h1 {
 .heading-primary-sub {
   display: block;
   font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 4px;
+  font-size: 1.4rem;
+  letter-spacing: .4rem;
 
   animation: .5s moveInRight;
 }
 
 .text-box {
   position: absolute;
-  top: calc(50% - 50px);
+  top: calc(50% - 5rem);
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -95,26 +99,26 @@ h1 {
   /* text-transform: uppercase; */
   font-weight: 700;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: all .2s;
   position: relative;
 }
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+  transform: translateY(-.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
 }
 .btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+  transform: translateY(-.1rem);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
 }
 .btn::after {
   content: "";
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -133,7 +137,7 @@ h1 {
   background-color: rgba(255, 255, 255, .5);
 }
 .btn-animated {
-  animation: moveInBottom .5s ease-out .75s;
+  animation: moveInBottom .5s ease-out .75s;  /* animation-name duration timing-function delay  */
   animation-fill-mode: backwards;
 }
 
@@ -141,7 +145,7 @@ h1 {
 
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   100% {
@@ -155,7 +159,7 @@ h1 {
 
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
   100% {
     opacity: 1;
@@ -168,7 +172,7 @@ h1 {
 
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(10rem);
   }
   100% {
     opacity: 1;
