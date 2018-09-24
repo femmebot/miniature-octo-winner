@@ -15,13 +15,13 @@ Dark green: #28b485
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 body {
   font-family: -apple-system, Roboto, BlinkMacSystemFont, “Segoe UI”, Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   line-height: 1.7;
   color: #777;
   padding: 3rem;
@@ -97,6 +97,7 @@ h1 {
 .btn:link,
 .btn:visited {
   /* text-transform: uppercase; */
+  font-size: 1.6rem;
   font-weight: 700;
   text-decoration: none;
   padding: 1.5rem 4rem;
