@@ -2,12 +2,14 @@
 $color-primary-light: #7ed56f;
 $color-primary-medium: #55c57a;
 $color-primary-dark: #28b485;
+$color-gray-dark: #222;
+$color-gray-medium: #777;
+$color-white: #fff;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid #f00; */
 }
 
 html {
@@ -17,9 +19,8 @@ html {
 body {
   font-family: -apple-system, Roboto, BlinkMacSystemFont, “Segoe UI”, Helvetica, Arial, sans-serif;
   font-weight: 400;
-  /* font-size: 1.6rem; */
   line-height: 1.7;
-  color: #777;
+  color: $color-gray-medium;
   padding: 3rem;
 }
 
@@ -56,7 +57,7 @@ h1 {
 }
 
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
@@ -69,7 +70,6 @@ h1 {
   display: block;
   font-size: 6rem;
   font-weight: 800;
-
   animation-name: moveInLeft;
   animation-duration: .5s;
 }
@@ -79,7 +79,6 @@ h1 {
   font-weight: 400;
   font-size: 1.4rem;
   letter-spacing: .4rem;
-
   animation: .5s moveInRight;
 }
 
@@ -127,12 +126,13 @@ h1 {
   opacity: 0;
 }
 .btn-white {
-  color: #222;
-  background-color: #fff;
+  color: $color-gray-dark;
+  background-color: $color-white;
+  &::after {
+    background-color: rgba($color-white, .5);
+  }
 }
-.btn-white::after {
-  background-color: rgba(255, 255, 255, .5);
-}
+
 .btn-animated {
   animation: moveInBottom .5s ease-out .75s;  /* animation-name duration timing-function delay  */
   animation-fill-mode: backwards;
