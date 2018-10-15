@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, Roboto, BlinkMacSystemFont, “Segoe UI”, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-gray-medium;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+}
